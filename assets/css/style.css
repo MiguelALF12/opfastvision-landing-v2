@@ -3,7 +3,10 @@ html,
 div {
     margin: 0;
     padding: 0;
+    width: 100%;
     font-family: 'Source Sans 3', sans-serif;
+    /* height: 100%; */
+
 }
 
 #brand-text {
@@ -61,37 +64,32 @@ div {
     padding: 8px 8px 8px 8px;
     background: #344871;
     position: relative;
-
 }
 
 #valueProp-img-container {
-    position: absolute;
-    left: 50%;
-    top: 17%;
-}
-
-#valueProp-img-subContainer {
     position: relative;
+    /* left: 50%;
+    top: 17%; */
 }
 
 #valueProp-img-1 {
-    background: #000000;
-    border-radius: 91px 91px 91px;
-    z-index: 2;
-}
-
-#valueProp-img-roundedImg {
     position: absolute;
-    left: 80%;
-    top: 70%;
+    background: #000000;
+    border-radius: 33px 33px 33px 33px;
+    z-index: 2;
+    top: 17%;
 }
 
 #valueProp-img-2 {
+    position: absolute;
     box-shadow: -7px -4px 10px rgba(0, 0, 0, 0.4);
     background: #000000;
     border-radius: 95px 95px 95px 95px;
     z-index: 3;
+    left: 60%;
+    top: 150%;
 }
+
 
 #valueProp-buy-btn {
     width: 117px;
@@ -152,7 +150,7 @@ div {
     text-align: left;
 }
 
-.benefits-container-img-1 {
+#benefits-container-img-1 {
     background: #000000;
     border-radius: 29px 29px 29px 29px;
 }
@@ -255,12 +253,181 @@ div {
 
 #benefit-img-2-1 {
     position: absolute;
-    width: 354px;
-    height: 199px;
     box-shadow: 9px -3px 12px rgba(0, 0, 0, 0.4);
     background: #000000;
     border-radius: 18px 18px 18px 18px;
     z-index: 3;
     top: 35%;
     right: 50%;
+}
+
+
+
+/* Media query for phones */
+@media (max-width:1200px) {
+    #valueProp-rectangle-2 {
+        height: 220px;
+        /* padding: 8px 8px 8px 120px; */
+        padding: 8px 8px 8px 8px;
+        background: #344871;
+        position: relative;
+    }
+
+    #valueProp-img-1 {
+        width: 400px;
+    }
+
+    #valueProp-img-2 {
+        width: 160px;
+        top: 100%;
+        left: 57%;
+    }
+
+    .benefits-container>div>h5 {
+        width: 280px;
+    }
+
+    .benefits-container>div>p {
+        width: 280px;
+    }
+
+    #benefits-container-img-1 {
+        width: 380px;
+    }
+
+    #benefit-img-1-1 {
+        width: 250px;
+        top: 0;
+        right: 15%;
+    }
+
+    #benefit-img-2-1 {
+        width: 190px;
+        height: 132px;
+        top: 25%;
+        right: 50%;
+    }
+
+}
+
+@media (max-width:768px) {
+    #valueProp-rectangle-1 {
+        height: 480px;
+        /* padding: 8px 8px 8px 120px; */
+        padding: 8px 8px 8px 8px;
+    }
+
+    #valueProp-rectangle-2 {
+        height: 220px;
+        /* padding: 8px 8px 8px 120px; */
+        padding: 8px 8px 8px 8px;
+        background: #344871;
+        position: relative;
+    }
+
+    #valueProp-img-1 {
+        width: 400px;
+    }
+
+    #valueProp-img-2 {
+        width: 160px;
+        top: 100%;
+        left: 57%;
+    }
+
+    #valueProp-mainTitle {
+        display: block;
+        width: 100%;
+        height: 89px;
+        text-align: center;
+    }
+
+    #valueProp-explanation {
+        width: 500px;
+        height: 82px;
+
+    }
+
+    .benefits-container>div>h5 {
+        width: 280px;
+    }
+
+    .benefits-container>div>p {
+        width: 280px;
+    }
+
+    #benefits-container-img-1 {
+        width: 340px;
+    }
+
+    #benefit-img-1-1 {
+        width: 220px;
+        top: 0;
+        right: 5%;
+    }
+
+    #benefit-img-2-1 {
+        width: 180px;
+        height: 128px;
+        top: 25%;
+        right: 45%;
+    }
+
+}
+
+@media (max-width:576px) {
+    #valueProp-rectangle-1 {
+        height: 470px;
+        padding: 8px 8px 8px 8px;
+    }
+
+    #valueProp-rectangle-2 {
+        height: 220px;
+        padding: 8px 8px 8px 8px;
+        background: #344871;
+    }
+
+    #valueProp-mainTitle {
+        font-size: 31px;
+    }
+
+    #valueProp-img-1 {
+        width: 340px;
+    }
+
+    #valueProp-img-2 {
+        width: 140px;
+        top: 95%;
+        left: 54%;
+    }
+
+    #benefits-container-img-1 {
+        width: 290px;
+    }
+
+    .benefits-container>div {
+        padding: 15px 0px 15px 0px;
+    }
+
+
+    .benefits-container>div>h5 {
+        width: 250px;
+    }
+
+    .benefits-container>div>p {
+        width: 250px;
+    }
+
+    #benefit-img-1-1 {
+        width: 200px;
+        top: 5%;
+        right: 17%;
+    }
+
+    #benefit-img-2-1 {
+        width: 160px;
+        top: 25%;
+        right: 47%;
+        border-radius: 95px 95px 95px 95px;
+    }
 }
