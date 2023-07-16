@@ -23,10 +23,50 @@ div {
     border-radius: 15px 15px 15px 15px;
 }
 
-/* #navbarOptions>li {
+#signup-btn {
+    width: 117px;
+    height: 50px;
+    padding: 0px 10px 0px 10px;
+    background: #334873;
+    color: #ffffff;
+    border-color: #444444;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px 5px 5px 5px;
     font-weight: 600;
     font-size: 16px;
-} */
+    text-align: center;
+}
+
+#signin-btn {
+    width: 117px;
+    height: 50px;
+    padding: 0px 10px 0px 10px;
+    background: #edf0f4;
+    color: #444444;
+    border-color: #444444;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px 5px 5px 5px;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+#navbarOptions>li {
+    border-radius: 8px;
+}
+
+#navbarOptions>li:hover,
+#signup-btn:hover {
+    background-color: rgb(171, 171, 171);
+}
+
+#signin-btn:hover {
+    background-color: #334873;
+    color: white;
+}
 
 #valueProp-mainTitle {
     display: inline-block;
@@ -123,6 +163,17 @@ div {
     text-align: center;
 }
 
+#valueProp-buy-btn:hover {
+    background-color: white;
+    border-color: white;
+    color: #334873;
+}
+
+#valueProp-schedule-btn:hover {
+    background-color: #54c5cb;
+    border-color: #54c5cb;
+    color: #1d3f41;
+}
 
 /* ----------- benefits */
 
@@ -156,7 +207,7 @@ div {
 }
 
 
-/* ----------- cat */
+/* ----------- cat #1*/
 #cta-container {
     height: 300px;
     padding: 8px 8px 8px 8px;
@@ -197,6 +248,7 @@ div {
     flex: 0 0 auto;
     /* height: 200px; */
     padding: 10px 5px;
+    cursor: pointer;
 }
 
 .product-thumb {
@@ -204,11 +256,6 @@ div {
     height: 100%;
     object-fit: cover;
     position: relative;
-}
-
-.product-info {
-    width: 100%;
-    height: 20%;
 }
 
 .product-img {
@@ -219,19 +266,15 @@ div {
 }
 
 .card-button {
+    display: none !important;
     position: absolute;
     bottom: 10px;
     left: 10%;
     width: 80%;
-    display: none;
-}
-
-.product-img:hover .card-button {
-    display: initial;
 }
 
 .product-card:hover .card-button {
-    display: initial;
+    display: initial !important;
 }
 
 
@@ -259,6 +302,102 @@ div {
     z-index: 3;
     top: 35%;
     right: 50%;
+}
+
+/* ------------- features */
+.feature-text>p {
+    width: 218px;
+    height: 120px;
+    opacity: 80%;
+    color: #606060;
+    font-family: "Source Sans 3";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* ----------- cat #2*/
+#cta-container-2 {
+    height: 330px;
+    padding: 8px 8px 8px 8px;
+    background: #54c5cb;
+}
+
+#cta-2-btn {
+    height: 56px;
+    padding: 0px 10px 0px 10px;
+    background: #334873;
+    color: #ffffff;
+    border-color: #54c5cb;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px 5px 5px 5px;
+    font-family: "Source Sans 3";
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    word-break: normal;
+}
+
+#cta-2-btn:hover {
+    background-color: rgb(198, 195, 195);
+}
+
+#cat-2-text {
+    height: 58px;
+    opacity: 80%;
+    color: #1d3f41;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.42;
+}
+
+/* ----------- social media*/
+.social-link-circle {
+    width: 48px;
+    height: 48px;
+    padding: 8px 8px 8px 8px;
+    margin: 4px 4px 4px 4px;
+    background: #ebebeb;
+    border-radius: 24px 24px 24px 24px;
+}
+
+#social-links-nav {
+    padding: 8px 8px 8px 8px;
+    background-color: #334873;
+}
+
+#social-links-nav>div>a {
+    display: flex;
+    padding: 5px;
+}
+
+/* ----------- footer*/
+#handmade-horizontal-rule {
+    height: 1px;
+    background-color: white;
+}
+
+footer {
+    height: 300px;
+    padding: 8px 8px 8px 8px;
+    background: #334873;
+}
+
+footer>div>p {
+    height: 67px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#footer-links>a {
+    text-decoration: none;
+    color: white;
+    width: 160px;
 }
 
 
