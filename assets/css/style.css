@@ -11,16 +11,18 @@ div {
 
 #brand-text {
     color: #444444;
+    padding-left: 10px;
     font-weight: bold;
     font-size: 22px;
     line-height: 1.28;
+    text-align: center;
 
 }
 
 #navbarOptions {
     padding: 8px 8px 8px 8px;
-    background: #334873;
-    border-radius: 15px 15px 15px 15px;
+    background: #77B839;
+    border-radius: 15px 15px 15px 15px;    
 }
 
 #signup-btn {
@@ -60,7 +62,7 @@ div {
 
 #navbarOptions>li:hover,
 #signup-btn:hover {
-    background-color: rgb(171, 171, 171);
+    background-color: #A3D477;
 }
 
 #signin-btn:hover {
@@ -70,13 +72,13 @@ div {
 
 #valueProp-mainTitle {
     display: inline-block;
-    width: 419px;
-    height: 89px;
+    /* width: 419px;
+    height: 89px; */
     color: #444444;
-    font-weight: 700;
-    font-size: 38px;
+    font-weight: 900;
+    font-size: 48px;
     line-height: 1.2;
-    text-align: left;
+    text-align: end;
 }
 
 #valueProp-explanation {
@@ -102,7 +104,7 @@ div {
     height: 293px;
     /* padding: 8px 8px 8px 120px; */
     padding: 8px 8px 8px 8px;
-    background: #344871;
+    background: #77B839;
     position: relative;
 }
 
@@ -148,9 +150,9 @@ div {
 }
 
 #valueProp-schedule-btn {
-    width: 117px;
+    width: max-content;
     height: 49px;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 5px 0px 5px;
     background: #ffffff;
     color: #334873;
     border-color: #ffffff;
@@ -158,9 +160,15 @@ div {
     border-style: solid;
     border-radius: 5px 5px 5px 5px;
     font-family: "Source Sans 3";
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 14px;
     text-align: center;
+}
+
+#valueProp-schedule-btn>a {
+    text-align: center;
+    text-decoration: none;
+    color: #2C2C2C;
 }
 
 #valueProp-buy-btn:hover {
@@ -170,9 +178,8 @@ div {
 }
 
 #valueProp-schedule-btn:hover {
-    background-color: #54c5cb;
-    border-color: #54c5cb;
-    color: #1d3f41;
+    background-color: #d0d1d4;
+    border-color: #d0d1d4;
 }
 
 /* ----------- benefits */
@@ -211,7 +218,7 @@ div {
 #cta-container {
     height: 300px;
     padding: 8px 8px 8px 8px;
-    background: #334873;
+    background: #77B839;
 }
 
 #cta-title {
@@ -223,15 +230,6 @@ div {
     text-align: center;
     margin: 0px;
     padding-top: 20px;
-}
-
-#cta-container>h6 {
-    color: #ffffff;
-    font-family: "Source Sans 3";
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
 }
 
 #product-slider-container {
@@ -330,7 +328,7 @@ div {
 #cta-container-2 {
     height: 330px;
     padding: 8px 8px 8px 8px;
-    background: #54c5cb;
+    background: #77B839;
 }
 
 #cta-2-btn {
@@ -391,7 +389,7 @@ div {
 footer {
     height: 300px;
     padding: 8px 8px 8px 8px;
-    background: #334873;
+    background: #77B839;
 }
 
 footer>div>p {
@@ -406,28 +404,44 @@ footer>div>p {
     text-decoration: none;
     color: white;
     width: 160px;
+    padding: 0px 10px 0px 10px;
 }
 
 
 
 /* Media query for phones */
 @media (max-width:1200px) {
+    #valueProp-rectangle-1 {
+        height: 220px;
+        /* padding: 8px 8px 8px 120px; */
+        padding: 8px 8px 8px 8px;
+    }
     #valueProp-rectangle-2 {
         height: 220px;
         /* padding: 8px 8px 8px 120px; */
         padding: 8px 8px 8px 8px;
-        background: #344871;
+        background: #77B839;
         position: relative;
     }
 
     #valueProp-img-1 {
-        width: 400px;
+        width: 425px;
     }
 
     #valueProp-img-2 {
-        width: 160px;
+        width: 180px;
         top: 100%;
         left: 57%;
+    }
+
+    #valueProp-mainTitle {
+        display: block;
+        text-align: center;
+    }
+    
+    #valueProp-explanation {
+        width: 500px;
+        height: 82px;
     }
 
     .benefits-container>div>h5 {
@@ -456,7 +470,40 @@ footer>div>p {
     }
 
 }
+@media(max-width: 992px){
+    #valueProp-rectangle-1 {
+        height: 340px;
+        /* padding: 8px 8px 8px 120px; */
+        padding: 8px 8px 8px 8px;
+    }
+    #valueProp-rectangle-2 {
+        height: 180px;
+        /* padding: 8px 8px 8px 120px; */
+        padding: 8px 8px 8px 8px;
+        background: #77B839;
+        position: relative;
+    }
 
+    #valueProp-img-1 {
+        width: 300px;
+    }
+
+    #valueProp-img-2 {
+        width: 120px;
+        top: 100%;
+        left: 57%;
+    }
+
+    #valueProp-mainTitle {
+        display: block;
+        text-align: center;
+    }
+    
+    #valueProp-explanation {
+        width: 500px;
+        height: 82px;
+    }
+}
 @media (max-width:768px) {
     #valueProp-rectangle-1 {
         height: 480px;
@@ -468,7 +515,7 @@ footer>div>p {
         height: 220px;
         /* padding: 8px 8px 8px 120px; */
         padding: 8px 8px 8px 8px;
-        background: #344871;
+        background: #77B839;
         position: relative;
     }
 
@@ -484,9 +531,10 @@ footer>div>p {
 
     #valueProp-mainTitle {
         display: block;
-        width: 100%;
-        height: 89px;
         text-align: center;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 1.2;
     }
 
     #valueProp-explanation {
@@ -509,15 +557,15 @@ footer>div>p {
 
     #benefit-img-1-1 {
         width: 220px;
-        top: 0;
-        right: 5%;
+        top: 25%;
+        right: 30%;
     }
 
     #benefit-img-2-1 {
         width: 180px;
         height: 128px;
-        top: 25%;
-        right: 45%;
+        top: 50%;
+        right: 50%;
     }
 
 }
@@ -531,7 +579,7 @@ footer>div>p {
     #valueProp-rectangle-2 {
         height: 220px;
         padding: 8px 8px 8px 8px;
-        background: #344871;
+        background: #77B839;
     }
 
     #valueProp-mainTitle {
@@ -567,14 +615,22 @@ footer>div>p {
 
     #benefit-img-1-1 {
         width: 200px;
-        top: 5%;
+        top: 25%;
         right: 17%;
     }
 
     #benefit-img-2-1 {
         width: 160px;
-        top: 25%;
+        top: 45%;
         right: 47%;
         border-radius: 95px 95px 95px 95px;
     }
+}
+
+#Whatsapp-link{
+    text-decoration: none;
+    color: #2C2C2C;
+}
+
+#location {
 }

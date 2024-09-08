@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FastVision</title>
+    <title>FULL VISION</title>
     <link href="assets/css/style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,12 +16,12 @@
 <body>
     <div class="container-fluid p-0">
         <!-- Start: Navigation bar -->
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-light me-lg-5">
             <div class="container-fluid">
                 <a class="navbar-brand d-flex align-items-center justify-content-around" href="#">
                     <img src="assets/img/LogoPNG.png" alt="Tecnioptica Full vision logo" width="60" height="60"
                         class="d-inline-block">
-                    <span id="brand-text">Optica FAST VISION</span>
+                    <span id="brand-text">TECNIÓPTICA <br /> FULL VISIÓN</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,10 +43,12 @@
                             <a class="nav-link text-white" href="#">Contactanos</a>
                         </li>
                     </ul>
+                    <!-- Registro y sign up
                     <span class="navbar-text justify-content-end">
                         <button class="btn btn-outline-success me-2" type="button" id="signup-btn">Registrate</button>
                         <button class="btn btn-outline-secondary" type="button" id="signin-btn">Inicia sesion</button>
-                    </span>
+                    </span> 
+                    -->
                 </div>
             </div>
         </nav>
@@ -54,11 +56,10 @@
 
         <!-- Start: Value proposition -->
         <div class="row m-0" id="valueProp-rectangle-1">
-            <div class="col col-12 col-lg-6 order-5 order-lg-first align-self-end ">
-                <h3 id="valueProp-mainTitle">
-                    Tu visión, en manos <br />
-                    de expertos
-                </h3>
+            <div class="col col-12 col-lg-6 order-5 order-lg-first align-self-end">
+                <h2 id="valueProp-mainTitle">
+                    Salud visual a su alcance
+                </h2>
             </div>
             <div id="valueProp-img-container"
                 class="col col-12 col-lg-6 order-1 order-lg-last d-flex justify-content-center justify-content-lg-start">
@@ -77,8 +78,13 @@
                         adiós a tus problemas
                     </p>
                     <div class="d-flex justify-content-center">
-                        <button id="valueProp-buy-btn" class="btn mx-3" type="button">COMPRA</button>
-                        <button id="valueProp-schedule-btn" class="btn mx-3" type="button">AGENDA TU CITA</button>
+                        <!-- <button id="valueProp-buy-btn" class="btn mx-3" type="button">COMPRA</button> -->
+                        <button id="valueProp-schedule-btn" class="btn mx-3" type="button">
+                            <img src="./assets/img/Whatsapp.png" alt="Whatsapp logo">
+                            <a href="https://api.whatsapp.com/send?phone=573233342904" target="_blank">AGENDA TU
+                                CITA</a>
+                        </button>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -86,15 +92,18 @@
         <!-- End: Value proposition -->
 
         <!-- Start: Benefits #1 -->
-        <div class="row m-0 benefits-container">
-            <div class="col col-12 col-md-6 text-center text-md-end">
+        <div class=" row m-0 benefits-container">
+            <div class="col col-12 col-md-5 text-center text-md-end">
                 <img class="img-fluid" id="benefits-container-img-1"
                     src="assets/img/people-with-glasses-collage (2).jpg" alt="Collage de personas con gafas">
             </div>
-            <div class="col col-12 col-md-6 ps-5 d-flex flex-column justify-content-center">
+            <div
+                class="col col-12 col-md-7 ps-5 d-flex flex-column justify-content-center align-items-center align-items-lg-center">
                 <h5>Tus lentes, tu estilo</h5>
-                <p>Show how your product's features matter, how they set you apart from the competition, and how you can
-                    transform your customer's experience at work or at home.</p>
+                <p>Descubre una amplia selección de lentes diseñados para resaltar tu personalidad.
+                    Con protección UV, materiales ligeros y un ajuste cómodo, nuestros lentes no solo cuidan tu vista,
+                    sino que también complementan tu estilo único. ¡Elige los que van contigo y luce increíble todos los
+                    días!</p>
             </div>
         </div>
         <!-- End: Benefits #1 -->
@@ -135,19 +144,21 @@
                     </div>
                 </div>
             </div>
-            <h6>Encuentra tu estilo ideal</h6>
         </div>
         <!-- End: cta -->
 
         <!-- Start: Benefits #2 -->
         <div class="row m-0 benefits-container">
             <div
-                class="col col-12 col-md-6 d-flex flex-column justify-content-center align-items-center align-items-lg-end">
-                <h5>Tus lentes, tu estilo</h5>
-                <p>Show how your product's features matter, how they set you apart from the competition, and how you can
-                    transform your customer's experience at work or at home.</p>
+                class="col col-12 col-md-5 d-flex flex-column justify-content-center align-items-center align-items-lg-end">
+                <h5>Cuidado profesional</h5>
+                <p>
+                    Tu salud visual es nuestra prioridad. Contamos con equipos de última tecnología y un equipo de
+                    especialistas dedicados a ofrecerte un examen ocular completo y personalizado. Desde la detección
+                    temprana de problemas hasta la recomendación de lentes perfectos para ti.
+                </p>
             </div>
-            <div class="col col-12 col-md-6 d-flex justify-content-evenly" id="benefit-img-container-1">
+            <div class="col col-12 col-md-7 d-flex justify-content-evenly" id="benefit-img-container-1">
                 <img class="img-fluid" id="benefit-img-1-1" src="assets/img/doctor-testing-patient-eyesight_.jpg"
                     alt="Ofaltmologa revisando a pacientes">
                 <img class="img-fluid" id="benefit-img-2-1" src="assets/img/doctor-testing-patient-eyesight_2.jpg"
@@ -157,7 +168,7 @@
         <!-- End: Benefits #2 -->
 
         <!-- Start: Features #1 -->
-        <div class="row m-0">
+        <!-- <div class="row m-0">
             <div class="col-sm-12 col-md-4 p-1 text-center feature-text">
                 <img src="assets/img/feature1.png"
                     alt="Un ojo con unz cruz en la mitad que significa cuidado de la vista" width="75px" height="75px">
@@ -191,17 +202,17 @@
                     <li>Lentes cosmeticos</li>
                 </ul>
             </div>
-        </div>
+        </div> -->
         <!-- End: Features #1 -->
 
         <!-- Start: Location -->
-        <div class="row m-0 p-5">
+        <div class="row m-0 pb-5">
             <div class="d-flex flex-column align-items-center">
                 <h4>Nuestras oficinas</h4>
                 <br />
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.737956499366!2d-75.70020598938248!3d4.814994695140296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38874f3c1fb6f9%3A0x3cec7b9e4bb914fc!2sCl.%2023%20%237-12%2C%20Pereira%2C%20Risaralda!5e0!3m2!1ses!2sco!4v1724544541089!5m2!1ses!2sco"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    style="border:0;" loading="lazy" width="300" height="300" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
